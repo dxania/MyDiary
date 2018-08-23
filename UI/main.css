@@ -1,0 +1,177 @@
+#page-container{
+    width: 1200px;
+    margin: auto;
+}
+
+#home-container{
+    width: 100%;
+    /* margin: auto; */
+}
+
+#main-nav{
+    background:rgb(238, 199, 206);
+    height: 50px;
+    /* font-style: italic; */
+    color: aliceblue;
+    border-radius: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#main-nav login{
+    float: right;
+    padding-top: 7px;
+    padding-right: 5px;
+}
+
+#home-nav{
+    background:rgb(238, 199, 206);
+    height: 50px;
+    /* font-style: italic; */
+    padding-top: 7px;
+    padding-right: 5px;
+    color: aliceblue;
+    border-radius: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#home-nav ul{
+    overflow: hidden;
+    background-color: rgb(238, 199, 206);
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+#home-nav ul li{
+    float: right;
+}
+
+#home-nav ul li a{
+    display: block;
+    text-decoration: none;
+    padding: 8px 16px;
+    color: aliceblue;
+    font-weight: bold;
+}
+
+#home-nav ul li a:hover{
+    background-color: aliceblue;
+    color: rgb(238, 199, 206);
+}
+
+#side-nav ul{
+    width: 200px;
+    background-color: rgb(238, 199, 206);
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+}
+
+#side-nav ul li a{
+    display: block;
+    text-decoration: none;
+    padding: 8px 16px;
+    color: aliceblue;
+    font-weight: bold;
+   
+}
+
+#side-nav ul li a:hover{
+    background-color: aliceblue;
+    color: rgb(238, 199, 206);
+}
+
+#side-nav ul li a .active{
+    background-color: aliceblue;
+    color: rgb(238, 199, 206);
+}
+
+.button{
+    border-radius: 4px;
+    background-color: aliceblue;
+    text-align: center;
+    padding: 5px 8px;
+    text-decoration: none;
+    border: none;
+    color: black;
+    display: inline-block;
+}
+
+#content{
+    background: url('../UI/images/banner.jpg');
+    height: 500px;
+    border-radius: 5px;
+}
+
+#content h2{
+    font-style: italic;
+    color: aliceblue;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#container{
+    width: 550px;
+    height: 250px;
+    margin: auto;
+    /* padding-top: -10px; */
+    background: rgb(238, 199, 206);
+    border-radius: 5px;
+}
+
+#container h2,form{
+    color: aliceblue;
+    /* font: 'Oleo Script', Helvetica, sans-serif;
+    text-shadow: 4px 4px 0px rgba(0,0,0,0.1); */
+}
+
+#content2{
+    background: white;
+    width: 650px;
+    height: 250px;
+    margin: auto;
+    /* font-style: italic; */
+    font-weight: 600;
+    color: rgb(238, 199, 206);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+ #content2 h3{
+    text-align: center;
+    /*
+    font-style: italic;
+    color: rgb(238, 199, 206);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;*/
+} 
+
+#main-content{
+    background: white;
+    width: 1000px;
+    height: 250px;
+    margin: auto;
+    /* font-style: italic; */
+    font-weight: 600;
+    color: rgb(238, 199, 206);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column{
+    float: left;
+    width: 50%;
+    
+}
+
+#footer{
+    background:rgb(238, 199, 206);
+    height: 50px;
+    color: aliceblue;
+    font-weight: bolder;
+    border-radius: 5px;
+}
