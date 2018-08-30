@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>MyDiary</title>
+        <link href="main.css" rel ="stylesheet">
+        <link href="images/icon.png" rel="icon">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="settings.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <div class="container">
+                <div id="brand">
+                    <h1><span class="highlight">My</span>Diary</h1>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <!-- <li><a href="../home/home.html"><i class="fa fa-home"></i >Home</a></li> -->
+                    <li><a href="addentry.html"><i class="fa fa-edit"></i> Add Entry</a></li>
+                    <li><a href="allentries.html"><i class="fa fa-navicon"></i> All  Entries</a></li>
+                    <li class="current"><a href="settings.html"><i class="fa fa-gear"></i> Settings</a></li>
+                    <li><a href="index.html"></i>LogOut <i class="fa fa-power-off"></i></a></li>
+                </ul>    
+            </nav>
+        </header>
+
+        <section >
+            <div class="tab">
+                <button class="tablinks" onclick="openSetting(event, 'Profile and Account Settings')"><i class="fa fa-user"></i> Profile and Account</button>
+                <button class="tablinks" onclick="openSetting(event, 'Reminder Settings')"><i class="fa fa-bell"></i> Reminders</button>
+                <button class="tablinks" onclick="openSetting(event, 'Entries')"><i class="fa fa-navicon"></i> Entries</button>
+            </div>
+    
+            <div id="Profile and Account Settings" class="tabcontent">
+                <h3>Profile and Account Settings</h3>
+                <table>
+                    <tr>
+                        <td>First Name</td>&nbsp;
+                        <td><input type="text" name="fname"></td>
+                        <td><a href="#">Edit</a></td>
+                        <td><button type="submit">Save</button></td>
+                    </tr>
+                    <tr>
+                        <td>Last Name</td>
+                        <td><input type="text" name="fname"></td>
+                        <td><a href="#">Edit</a></td>
+                        <td><button type="submit">Save</button></td>
+                    </tr>
+                    <tr>
+                        <td>Date of Birth</td>
+                        <td><input type="date" name="fname"></td>
+                        <td><a href="#">Edit</a></td>
+                        <td><button type="submit">Save</button></td>
+                    </tr>
+                    <tr>
+                        <td>Occupation</td>
+                        <td><input type="text" name="fname"></td>
+                        <td><a href="#" >Edit</a></td>
+                        <td><button type="submit">Save</button></td>
+                    </tr>
+                    <tr>
+                        <td>E-mail</td>
+                        <td><input type="email" name="fname"></td>
+                        <td><a href="#">Edit</a></td>
+                        <td><button type="submit">Save</button></td>
+                    </tr>
+                    <tr>
+                        <td>Password</td>
+                        <td><input type="password" name="fname"></td>
+                        <td><a href="#">Edit</a></td>
+                        <td><button type="submit">Save</button></td>
+                    </tr>
+                </table>
+            </div>
+                      
+            <div id="Reminder Settings" class="tabcontent">
+                <h3>Reminder Settings</h3>
+                <table>
+                    <tr>
+                        <td>Reminders and Notifications</td>&nbsp;
+                        <td><input type="time" name="dreminder"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Repeat<input type="checkbox" id="myCheck" onclick="myFunction()"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><span id="text" style="display:none; font-size: 20px;"><strong>M T W T F S S</strong></span> </td>
+                    </tr><br><br>
+                    <tr>
+                        <td>Snooze</td>
+                        <td><select id="mins">
+                            <option value="1">None</option>
+                            <option value="1">1 minute</option>
+                            <option value="1">5 minutes</option>
+                            <option value="1">10 minutes</option>
+                            <option value="1">15 minutes</option>
+                            <option value="1">20 minutes</option>
+                            <option value="1">30 minutes</option>
+                            <option value="1">60 minutes</option>
+                        </select>
+                        </td>
+                    </tr>
+                                
+                </table>
+            </div> 
+                        
+            <div id="Entries" class="tabcontent">
+                <h3>Entries</h3>
+                <table>
+                    <tr>
+                        <td>Number of Entries since Date of Registration</td>&nbsp;
+                        <td><input type="text" name="fname"></td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <div id="footer">
+            <h4>MyDiary &copy; 2018</h4> 
+        </div>
+    </body>
+    
+</html>
+
+
