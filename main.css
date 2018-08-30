@@ -19,7 +19,7 @@
 }
 
 #content{
-    background: url('../UI/images/banner.jpg');
+    background: url('images/banner.jpg');
     height: 600px;
     border-radius: 5px;
     margin-top: 10%;
