@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>MyDiary</title>
+        <link href="main.css" rel ="stylesheet">
+        <link href="images/icon.png" rel="icon">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="addentry.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <div class="container">
+                <div id="brand">
+                    <h1><span class="highlight">My</span>Diary</h1>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <!-- <li><a href="../home/home.html"><i class="fa fa-home"></i >Home</a></li> -->
+                    <li  class="current"><a href="addentry.html"><i class="fa fa-edit"></i> Add Entry</a></li>
+                    <li><a href="allentries.html"><i class="fa fa-navicon"></i> All  Entries</a></li>
+                    <li><a href="settings.html"><i class="fa fa-gear"></i> Settings</a></li>
+                    <li><a href="index.html"></i>LogOut <i class="fa fa-power-off"></i></a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section >
+            <div id="book">
+                <div class="row">
+                    <div class="column">
+                        <div id="show_calendar">&nbsp;</div>
+                        <div id="current_month">&nbsp;</div>
+
+                    </div>
+                    <div class="column">
+                        <p>Add a New Entry for <span id="date"><script>document.getElementById("date").innerHTML=Date();</script></span></p>
+                        <form>
+                            <input name="title" type="text" placeholder="Title"><br><br>
+                            <textarea name="content" rows="6" cols="70" placeholder="Type your Content Here"></textarea><br><br>
+                            <button type="submit">Save</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div id="footer">
+            <h4>MyDiary &copy; 2018</h4> 
+        </div>
+    </body>
+    
+</html>
