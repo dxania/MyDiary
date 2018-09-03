@@ -19,7 +19,7 @@
 }
 
 #content{
-    background: url('images/banner.jpg');
+    background: url('../images/banner.jpg');
     height: 600px;
     border-radius: 5px;
     margin-top: 10%;
@@ -272,7 +272,7 @@ hr{
  /* ALL ENTRIES TABLE STYLING */
 
  #myInput {
-    background-image: url('/css/searchicon.png'); 
+    /* background-image: url('/css/searchicon.png');  */
     background-position: 10px 12px;
     background-repeat: no-repeat;
     width: 100%; 
