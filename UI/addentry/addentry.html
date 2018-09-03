@@ -1,69 +1,55 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
         <title>MyDiary</title>
         <link href="../main.css" rel ="stylesheet">
+        <link href="../images/icon.png" rel="icon">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="addentry.js"></script>
     </head>
 
     <body>
-        <div id = "home-container">
-            <div id="home-nav">
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li><a href="../signup and signin/signup.html">LogOut</a></li>
-                </ul>
-            </div>
-
-            <div id="side-nav">
-                <ul>
-                    <li><a href="../home/home.html">Home</a></li>
-                    <li><a href="#" class="active">Add Entry</a></li>
-                    <li><a href="#">View All Entries</a></li>
-                    <li><a href="#">Settings</a></li>
-                    <!-- <li><a href="home.html">Home</a></li>
-                    <li></li> -->
-                </ul>
-            </div>
-
-
-            <div id="main-content">
-                <h2>
-                    homeeeeee
-                </h2> 
-                <div id="container">
-                    <center><h2>Create Your Own Diary</h2></center>
-                    <form method="POST" action="">
-                        <input name="fname" type="text" required placeholder="First Name"> 
-                        <input name="lname" type="text" required placeholder="Last Name"><br><br>
-                        <input name="occupation" type="text" placeholder="Occupation">
-                        <input name="email" type="email" required placeholder="E-mail"><br><br>
-                        <center>Date of Birth <input name="dob" type="date" required><br><br></center>
-                        <center><input class="button" type="button" value="Submit"> <input class="button" type="button" value="Clear"></center>
-                    </form>
+        <header>
+            <div class="container">
+                <div id="brand">
+                    <h1><span class="highlight">My</span>Diary</h1>
                 </div>
-            </div> 
+            </div>
+            <nav>
+                <ul>
+                    <!-- <li><a href="../home/home.html"><i class="fa fa-home"></i >Home</a></li> -->
+                    <li  class="current"><a href="../addentry/addentry.html"><i class="fa fa-edit"></i> Add Entry</a></li>
+                    <li><a href="../allentries/allentries.html"><i class="fa fa-navicon"></i> All  Entries</a></li>
+                    <li><a href="../settings/settings.html"><i class="fa fa-gear"></i> Settings</a></li>
+                    <li><a href="../signup and signin/signup.html"></i>LogOut <i class="fa fa-power-off"></i></a></li>
+                </ul>
+            </nav>
+        </header>
 
-            <!-- <div id="content2">
-                <h3>About</h3>
+        <section >
+            <div id="book">
                 <div class="row">
                     <div class="column">
-                    MyDiary is an online based diary where you can pen down your thoughts, mark your
-                    appointments, document your memories. It also comes with special reminder and notification features
-                    that will prompt you to add entries to your diary.
+                        <div id="show_calendar">&nbsp;</div>
+                        <div id="current_month">&nbsp;</div>
+
                     </div>
                     <div class="column">
-                    With this application, you do not need to worry about the loss of your journal or having to move around with
-                    a pen and diary, MyDiary is available 24/7 and you can get access to your content from anywhere, at anytime and at your leisure.
+                        <p>Add a New Entry for <span id="date"><script>document.getElementById("date").innerHTML=Date();</script></span></p>
+                        <form>
+                            <input name="title" type="text" placeholder="Title"><br><br>
+                            <textarea name="content" rows="6" cols="70" placeholder="Type your Content Here"></textarea><br><br>
+                            <button type="submit">Save</button>
+                        </form>
                     </div>
                 </div>
-            </div> -->
-
-            <div id="footer">
-               <center>MyDiary &copy; 2018</center> 
-
             </div>
+        </section>
 
+        <div id="footer">
+            <h4>MyDiary &copy; 2018</h4> 
         </div>
     </body>
     

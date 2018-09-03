@@ -3,31 +3,42 @@
     <head>
         <title>MyDiary</title>
         <link href="../main.css" rel ="stylesheet">
+        <link href="../images/icon.png" rel="icon">
     </head>
 
     <body>
+            <header>
+                    <div class="container">
+                        <div id="brand">
+                            <h1><span class="highlight">My</span>Diary</h1>
+                        </div>
+                    </div>
+                    <nav>
+                            <login>
+                                    <input type="text" name="uname" placeholder="Username">
+                                    <input type="password" name="password" placeholder="Password">
+                                    <a href="../addentry/addentry.html" class="button">Login</a> 
+                                </login>
+                    </nav>
+                </header>
+
         <div id = "page-container">
-            <div id="main-nav">
-                <login>
-                    <input type="text" name="uname" placeholder="Username">
-                    <input type="password" name="password" placeholder="Password">
-                    <a href="../home/home.html" class="button">Login</a> 
-                </login>
-            </div>
-
-
+            
             <div id="content">
                 <h2>
                     MY DIARY
                 </h2> 
                 <div id="container">
-                    <center><h2>Create Your Own Diary</h2></center>
+                    <center><h3>Create Your Own Diary</h3></center>
                     <form method="POST" action="">
                         <input name="fname" type="text" required placeholder="First Name"> 
                         <input name="lname" type="text" required placeholder="Last Name"><br><br>
-                        <input name="occupation" type="text" placeholder="Occupation">
                         <input name="email" type="email" required placeholder="E-mail"><br><br>
+                        <input name="occupation" type="text" placeholder="Occupation">
                         <center>Date of Birth <input name="dob" type="date" required><br><br></center>
+                        <hr><br><br>
+                        <input type="password" name="pass" placeholder="Password" required>
+                        <input type="password" name="rep-pass" placeholder="Repeat Password" required><br><br>
                         <center><input class="button" type="button" value="Submit"> <input class="button" type="button" value="Clear"></center>
                     </form>
                 </div>
@@ -49,7 +60,7 @@
             </div>
 
             <div id="footer">
-               <center>MyDiary &copy; 2018</center> 
+               <h4>MyDiary &copy; 2018</h4> 
 
             </div>
 
